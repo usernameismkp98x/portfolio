@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Park MinKyung</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #f9f9f7;
+      color: #1a1a1a;
+      min-height: 100vh;
+    }
+
+    .wrap {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 4rem;
+    }
+
+    .header {
+      margin-bottom: 2.5rem;
+    }
+
+    .name {
+      font-size: 22px;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      color: #1a1a1a;
+    }
+
+    .sub {
+      font-size: 14px;
+      color: #888;
+      margin-top: 6px;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #e8e8e8;
+      margin-bottom: 2rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid #ebebeb;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .thumb {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background: #000;
+    }
+
+    .thumb iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+    }
+
+    .card-body {
+      padding: 0.75rem 1rem;
+    }
+
+    .card-label {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #aaa;
+      margin-bottom: 4px;
+    }
+
+    .card-title {
+      font-size: 14px;
+      font-weight: 500;
+      color: #1a1a1a;
+    }
+
+    .pdf-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      margin-top: 2rem;
+      font-size: 13px;
+      color: #666;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 8px 14px;
+      text-decoration: none;
+      transition: background 0.15s;
+    }
+
+    .pdf-link:hover {
+      background: #f2f2f0;
+    }
+
+    @media (max-width: 600px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="header">
+      <div class="name">Park MinKyung</div>
+      <div class="sub">Video Works</div>
+    </div>
+    <hr>
+
+    <div class="grid">
+
+      <div class="card">
+        <div class="thumb">
+          <iframe src="https://www.youtube.com/embed/hcEE2EMMPfk" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="card-body">
+          <div class="card-title">Nice Ghost Club Brand Refilm</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="thumb">
+          <iframe src="https://www.youtube.com/embed/gUaJw2sNIwA" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="card-body">
+          <div class="card-label">Video Edit</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="thumb">
+          <iframe src="https://www.youtube.com/embed/StGLUJGyx0c" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="card-body">
+          <div class="card-label">Video Edit</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="thumb">
+          <iframe src="https://www.youtube.com/embed/63vfsdSXrvs" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="card-body">
+          <div class="card-label">Video Edit</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="thumb">
+          <iframe src="https://www.youtube.com/embed/K5EeB7oorUc" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="card-body">
+          <div class="card-label">Video Edit</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="thumb">
+          <iframe src="https://www.youtube.com/embed/MWPanqvOXZs" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="card-body">
+          <div class="card-label">Video Edit</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- PDF 포트폴리오 링크: href="" 안에 PDF 링크 넣으면 돼요 -->
+    <a class="pdf-link" href="" target="_blank">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+        <polyline points="14 2 14 8 20 8"/>
+      </svg>
+      Design Portfolio (PDF)
+    </a>
+  </div>
+</body>
+</html>
